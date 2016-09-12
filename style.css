@@ -121,7 +121,7 @@ li a:hover {
     text-align: center;
     background: linear-gradient(to bottom, #565656, transparent 90%),
         linear-gradient(to top, #edeff0, transparent), 
-                #ffa949 url('/images/dunk.jpg') no-repeat;
+                #ffa949 url('dunk.jpg') no-repeat;
 
     background-size: cover;
     font: 1.125em/1.6 "Abolition Regular";
@@ -188,7 +188,7 @@ title,
     height: 90%;
     
     background: linear-gradient(rgba(54, 59, 63, .6),                     rgba(54, 59, 63, .6)), 
-                url('/images/meme.jpg') no-repeat center /cover;
+                url('meme.jpg') no-repeat center /cover;
     
     box-sizing: border-box;
     box-shadow: inset 0px 0px 50px 10px rgba(54, 59, 63, 0.7);
