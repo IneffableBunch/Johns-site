@@ -1,0 +1,266 @@
+/* Base Styles --------------- */
+@font-face {
+    font-family: "Abolition Regular";
+    src: url("//db.onlinewebfonts.com/t/26dc6aba929d825c95504e69bc537d57.eot");
+    src: url("//db.onlinewebfonts.com/t/26dc6aba929d825c95504e69bc537d57.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/26dc6aba929d825c95504e69bc537d57.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/26dc6aba929d825c95504e69bc537d57.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/26dc6aba929d825c95504e69bc537d57.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/26dc6aba929d825c95504e69bc537d57.svg#AbolitionW00-Round") format("svg");
+}
+
+body {
+    margin: 0;
+    
+    position: relative;
+    
+    font: 1em "Helvetica Neue", Helvetica, sans-serif;
+    background: #edeff0;
+    color: #999;   
+}
+
+h1 {
+    margin:  auto;
+    
+    font-size: 4.9em;
+    letter-spacing: .04em;
+    
+    text-shadow: 0 1px 0 #ccc,
+                   0 2px 0 #c9c9c9,
+                   0 3px 0 #bbb,
+                   0 4px 0 #b9b9b9,
+                   0 5px 0 #aaa,
+                   0 6px 1px rgba(0,0,0,.1),
+                   0 0 5px rgba(0,0,0,.1),
+                   0 1px 3px rgba(0,0,0,.3),
+                   0 3px 5px rgba(0,0,0,.2),
+                   0 5px 10px rgba(0,0,0,.25),
+                   0 10px 10px rgba(0,0,0,.2),
+                   0 20px 20px rgba(0,0,0,.15);
+    
+    box-sizing: content-box;
+    transition: color 300ms ease;
+}
+
+h2 {
+    margin-right: 5%;
+    
+    font-family: "Abolition Regular";
+    font-size: 1.8125em;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #E5E5E5;
+}
+
+p {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    line-height: 1.6em;
+    font-size: 1.25rem;
+}
+/* Psuedo-classes --------------- */
+
+li a:visited, a:link{
+    color: #E5E5E5;
+}
+
+li a:hover {
+    color: #ffa949;  
+    background-color: black;
+}
+
+h1:hover {
+    color: #ffa949;
+}
+
+.journey:hover {
+    box-shadow: inset 0px 0px 50px 10px rgba(54, 59, 63, 0.7),              -3px 5px 30px rgba(54, 59, 63, 0.7);
+    
+    border-top: 10px solid #c63;
+}
+
+/* Layout Styles --------------- */
+.navbar {
+    top: 0;
+    margin: 0;
+    padding: 0 13.167%; 
+    position: fixed;
+    overflow: hidden;
+    height: 60px;
+    width: 100%;
+    
+    
+    font: 1em "Abolition Regular";
+    background-color: #565656;
+    box-sizing: border-box;
+}
+
+.left-navitem {
+    float: left
+}
+
+.right-navitem {
+    float: right
+}
+
+.left-navitem,
+.right-navitem {
+    margin: 0 5px;
+    list-style-type: none;
+}
+
+.left-navitem a,
+.right-navitem a {
+    display: block;
+    padding: 14px 16px;
+    font-size: 1.8125em;
+    text-decoration: none;
+    
+    transition: all 300ms ease;
+}
+
+.main-header {
+    margin-top: 60px;
+    height: 705px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(to bottom, #565656, transparent 90%),
+        linear-gradient(to top, #edeff0, transparent), 
+                #ffa949 url('/images/dunk.jpg') no-repeat;
+
+    background-size: cover;
+    font: 1.125em/1.6 "Abolition Regular";
+}
+
+.title {   
+    font: 2.25rem/1.5 "Abolition Regular";
+    margin: 15% 0 0;
+    border-bottom: 2px solid #edeff0;    
+    display: inline-block;
+    
+    font-weight: 600;
+    text-shadow: 0 3px 5px black;
+    
+}
+
+.main-header,
+title,
+.navbar {
+    letter-spacing: 1px;
+}
+
+.logo {
+    float: left
+    padding-top: 0;
+    width: 54px;
+    height: 54px;
+}
+
+.main-footer {
+    padding: 60px 0;
+    border-bottom: 5px solid #ffa949;
+    
+    font-size: 1.125rem;
+    text-align: center;
+}
+
+/* Specific Styles --------------- */
+
+#first {
+    margin-left: 40px;
+}
+
+.primary-content,  
+.secondary-content {
+   width: 75%;
+   margin: auto;
+   padding: 25px 0;
+   border-top: 2px solid rgba(204, 102, 51, .5);
+   text-align: center;
+}
+
+.secondary-content {
+    border-bottom: 2px solid rgba(204, 102, 51, .5);
+}
+
+.journey {
+    max-width: 860px;
+    max-height: 560px;
+    padding: 9% 0;
+    margin: 10% auto;
+    width: 100%;
+    height: 100%;
+    
+    background: linear-gradient(rgba(54, 59, 63, .6),                     rgba(54, 59, 63, .6)), 
+                url('/images/meme.jpg') no-repeat center /cover;
+    
+    box-sizing: border-box;
+    box-shadow: inset 0px 0px 50px 10px rgba(54, 59, 63, 0.7);
+    border-radius: 10px;
+    
+    transition: all 300ms ease;
+}
+
+.philo-p {
+    width: 60%;
+    text-align: justify;
+    color: #E5E5E5;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Arrow Animation --------------- */
+
+.arrows {
+    margin: 20px;
+	width: 60px;
+	height: 72px;
+}
+
+.arrows path {
+	stroke: #2994D1;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+/* Media Queries --------------- */
+
+@media (max-width: 1097px) {
+    .navbar {
+       padding: 0;
+    }
+}
